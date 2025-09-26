@@ -1,6 +1,7 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "./WebApp/WebApp/Dockerfile"
+dockerfilePath = "WebApp/Dockerfile"
+dockerContext = "WebApp"
 
 [deploy]
 # Run database migrations before starting the application
