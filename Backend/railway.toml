@@ -4,7 +4,7 @@ dockerfilePath = "./WebApp/WebApp/Dockerfile"
 
 [deploy]
 # Run database migrations before starting the application
-preDeployCommand = ["dotnet ef database update --project WebApp/WebApp --startup-project WebApp/WebApp"]
+preDeployCommand = ["dotnet ef database update --project ./WebApp/WebApp --startup-project ./WebApp/WebApp"]
 startCommand = "dotnet WebApp.dll"
 restartPolicyType = "always"
 healthcheckPath = "/health"
